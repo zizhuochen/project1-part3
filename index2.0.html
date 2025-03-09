@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tulum Fuana</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <section>
+    <img src="sky.jpg" id="sky">
+    <img src="moon.png" id="moon">
+    <img src="sea.png" id="sea">
+    <img src="forest.png" id="forest">
+    <h2 id="text">Tulum Fuana</h2>
+  </section>
+  <script type="text/javascript">
+    let sky = document.getElementById("sky");
+    let moon = document.getElementById("moon");
+    let sea = document.getElementById("sea");
+    let forest = document.getElementById("forest");
+    let text = document.getElementById("text");
+
+    window.addEventListener('scroll', function(){
+      var value = window.scrollY;
+
+      sky.style.top = value*0.5 + 'px';
+      moon.style.left = value*0.5 + 'px';
+      sea.style.top = -value*0.15 + 'px';
+      forest.style.top = value*0.15 + 'px';
+      text.style.top = value*1 + 'px';
+    })
+  </script>
+  <h3 
+  style="color: white; font-size: 300%;margin-top: 500px;margin-left: 100px;" >About Tulum</h3>
+  <div class="text2">Tulum's fauna is rich and diverse, featuring jaguars, monkeys, iguanas, parrots, and sea turtles that thrive in its tropical ecosystem. The region is home to mangroves, rainforests, and coral reefs, providing a unique habitat for many species. Whether exploring the jungle or snorkeling along the coast, Tulum offers an incredible opportunity to witness the vibrant wildlife of Mexico's Caribbean.</div>
+<img id=section! src="section!.png" alt="section!">
+<br>
+<br>
+<p class="text3">For more information, please <br></p>
+<a class="text4" href="https://www.mexicokantours.com/post/which-15-species-are-easy-to-observe-during-your-visit-to-tulum-or-playa-del-carmen" target="_blank">click here.</a>
+<div class="text5">Content will be updated in the future.</div>
+</body>
+</html>
